@@ -2,6 +2,8 @@
 title: uSync.Automate
 date: 2026-08-13T13:00:00
 ---
+**Repo:** [Jumoo/uSync.Automate](https://github.com/Jumoo/uSync.Automate)
+
 - New `uSync.Automate.Actions.Complete` package: Automate actions/triggers wrapping uSync.Complete's publisher — push/pull content+media by item key, push/pull settings items (doc types, data types, templates, any UDI entity type) by entity type + key, create restore point, and a trigger for incoming push/pull completion
 - Ported the pipeline-driving pattern from uSync.Complete.Hangfire's `ProcessingScheduler`, but with a re-entrancy gate shared with the existing uSync run actions, cancellation between steps, and the pipeline's own error surfaced instead of a bare bool
 - Fixed `${ trigger.contentKey }` bindings blowing up the push action — Automate's `SettingsBindingResolver` only resolves `${ }` on string properties, so a `Guid`-typed `RootKey` handed the raw binding text to the JSON deserializer. Now a string, parsed to a Guid

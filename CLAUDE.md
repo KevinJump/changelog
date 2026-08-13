@@ -26,6 +26,12 @@ mechanics.
   - uSync.Complete: fixed a bug where content sync dropped custom properties
   - package x: added retry logic to the upload client
   ```
+- If the entry relates to a **public** repo, add a link to it as the first
+  line of the body, before the bullets:
+  ```
+  **Repo:** [owner/name](https://github.com/owner/name)
+  ```
+  Skip this line for private/internal repos.
 - Tone: informal, technical, terse. This is a changelog, not a report — skip
   scene-setting, skip "today I worked on...", just state what changed. No
   padding sentences.

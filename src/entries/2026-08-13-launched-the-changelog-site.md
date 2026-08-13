@@ -2,6 +2,8 @@
 title: Built and launched the changelog site
 date: 2026-08-13T09:00:00
 ---
+**Repo:** [KevinJump/changelog](https://github.com/KevinJump/changelog)
+
 - Built this site: Eleventy static site generator, markdown entries with title+date frontmatter, chronological listing, tiny client-side search filter
 - Deployed to GitHub Pages via GitHub Actions — push to main auto-builds and deploys
 - Fixed a bug where the GitHub Pages project subpath (`/changelog/`) broke absolute asset/link paths — switched to Eleventy's `pathPrefix` + `url` filter

@@ -1,10 +1,11 @@
 :root {
-  color-scheme: light;
-  --bg: #fafaf8;
-  --fg: #2a2e35;
-  --muted: #6b7280;
-  --accent: #2a7f7a;
-  --border: #dfe1e5;
+  color-scheme: dark;
+  --bg: #0a0f1e;
+  --bg-raised: #101830;
+  --fg: #c8d3e8;
+  --muted: #7d8eb5;
+  --accent: #5b9dff;
+  --border: #1c2740;
 }
 
 * {
@@ -15,7 +16,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -101,7 +102,7 @@ ul#entries {
 }
 
 pre {
-  background: #f0f0ec;
+  background: var(--bg-raised);
   padding: 0.75rem;
   overflow-x: auto;
   border-radius: 4px;

@@ -1,9 +1,8 @@
 ---
 layout: base.njk
 title: changelog
+search: true
 ---
-<input id="search" type="search" placeholder="search..." autocomplete="off">
-
 <ul id="entries">
 {% for entry in collections.entries %}
   <li class="entry" data-title="{{ entry.data.title | lower }}" data-body="{{ entry.templateContent | striptags | lower }}">
@@ -12,5 +11,3 @@ title: changelog
   </li>
 {% endfor %}
 </ul>
-
-<script src="{{ '/search.js' | url }}"></script>

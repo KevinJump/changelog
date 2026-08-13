@@ -9,6 +9,9 @@
 <body>
   <header>
     <a href="{{ '/' | url }}" class="site-title">~/changelog</a>
+    {% if search %}
+    <input id="search" type="search" placeholder="search..." autocomplete="off">
+    {% endif %}
   </header>
   <main>
     {{ content | safe }}
@@ -16,5 +19,6 @@
   <footer>
     <p>// end of log</p>
   </footer>
+  <script src="{{ '/search.js' | url }}"></script>
 </body>
 </html>

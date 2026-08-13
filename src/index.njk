@@ -8,9 +8,9 @@ title: changelog
 {% for entry in collections.entries %}
   <li class="entry" data-title="{{ entry.data.title | lower }}" data-body="{{ entry.templateContent | striptags | lower }}">
     <span class="entry-date">{{ entry.date | readableDate }}</span>
-    <a href="{{ entry.url }}">{{ entry.data.title }}</a>
+    <a href="{{ entry.url | url }}">{{ entry.data.title }}</a>
   </li>
 {% endfor %}
 </ul>
 
-<script src="/search.js"></script>
+<script src="{{ '/search.js' | url }}"></script>

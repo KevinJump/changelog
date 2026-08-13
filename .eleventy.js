@@ -13,6 +13,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
+    pathPrefix: "/changelog/",
     dir: {
       input: "src",
       output: "_site",

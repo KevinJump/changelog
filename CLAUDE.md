@@ -32,6 +32,15 @@ mechanics.
   **Repo:** [owner/name](https://github.com/owner/name)
   ```
   Skip this line for private/internal repos.
+- When a bullet mentions a **publicly available resource** — a NuGet/npm
+  package, a marketplace listing, a tagged release, a docs page, etc. — link
+  the specific mention inline to that resource, e.g.:
+  ```
+  - Released [`v17.0.0-beta1`](https://www.nuget.org/packages/Jumoo.uSync.Automate.Actions.Complete) to NuGet
+  ```
+  This is separate from the `Repo:` link above (which points at the source
+  repo) — a bullet can have both. Only link resources that are actually
+  public; don't link internal package feeds, private NuGet sources, etc.
 - Tone: informal, technical, terse. This is a changelog, not a report — skip
   scene-setting, skip "today I worked on...", just state what changed. No
   padding sentences.

@@ -9,4 +9,4 @@ date: 2026-08-13T10:30:00
 - Fixed a `ReleaseNotes` → `PackageReleaseNotes` bug in the csproj (release notes were never reaching the package) and a missing `.prettierrc` that broke `npm run format` on Windows
 - Pushed `v17/main`, made it the repo default; renamed the old `master` to `v9/dev`
 - Moved project + client code into `src/Jumoo.TranslationManager.GlobalLink/`, split the README into full docs + a short NuGet package readme
-- Set up trusted publishing, tagged and released `v17.0.0-rc1` to NuGet
+- Set up trusted publishing, tagged and released [`v17.0.0-rc1`](https://www.nuget.org/packages/Jumoo.TranslationManager.GlobalLink/17.0.0-rc1) to NuGet

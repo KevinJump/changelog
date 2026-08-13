@@ -1,10 +1,10 @@
 :root {
-  color-scheme: light dark;
-  --bg: #0f1115;
-  --fg: #d8dee9;
-  --muted: #7a8494;
-  --accent: #8fbcbb;
-  --border: #262b36;
+  color-scheme: light;
+  --bg: #fafaf8;
+  --fg: #2a2e35;
+  --muted: #6b7280;
+  --accent: #2a7f7a;
+  --border: #dfe1e5;
 }
 
 * {
@@ -96,7 +96,7 @@ ul#entries {
 }
 
 pre {
-  background: #161922;
+  background: #f0f0ec;
   padding: 0.75rem;
   overflow-x: auto;
   border-radius: 4px;

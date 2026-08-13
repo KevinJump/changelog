@@ -1,0 +1,16 @@
+---
+layout: base.njk
+title: changelog
+---
+<input id="search" type="search" placeholder="search..." autocomplete="off">
+
+<ul id="entries">
+{% for entry in collections.entries %}
+  <li class="entry" data-title="{{ entry.data.title | lower }}" data-body="{{ entry.templateContent | striptags | lower }}">
+    <span class="entry-date">{{ entry.date | readableDate }}</span>
+    <a href="{{ entry.url }}">{{ entry.data.title }}</a>
+  </li>
+{% endfor %}
+</ul>
+
+<script src="/search.js"></script>

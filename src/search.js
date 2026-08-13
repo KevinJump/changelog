@@ -1,16 +1,27 @@
 (function () {
   var input = document.getElementById("search");
-  var entries = document.querySelectorAll("#entries .entry");
+  var items = document.querySelectorAll("#entries > li");
   if (!input) return;
 
   input.addEventListener("input", function () {
     var q = input.value.trim().toLowerCase();
-    entries.forEach(function (entry) {
+    var heading = null;
+    var headingHasMatch = false;
+
+    items.forEach(function (item) {
+      if (item.classList.contains("date-heading")) {
+        if (heading) heading.classList.toggle("hidden", !headingHasMatch);
+        heading = item;
+        headingHasMatch = false;
+        return;
+      }
       var match =
         !q ||
-        entry.dataset.title.indexOf(q) !== -1 ||
-        entry.dataset.body.indexOf(q) !== -1;
-      entry.classList.toggle("hidden", !match);
+        item.dataset.title.indexOf(q) !== -1 ||
+        item.dataset.body.indexOf(q) !== -1;
+      item.classList.toggle("hidden", !match);
+      if (match) headingHasMatch = true;
     });
+    if (heading) heading.classList.toggle("hidden", !headingHasMatch);
   });
 })();

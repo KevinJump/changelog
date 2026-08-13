@@ -76,10 +76,18 @@ ul#entries {
   padding: 0;
 }
 
+.date-heading {
+  color: var(--muted);
+  font-size: 0.85em;
+  padding: 0.6rem 0 0.2rem;
+}
+
+.date-heading:first-child {
+  padding-top: 0;
+}
+
 .entry {
-  display: flex;
-  gap: 1rem;
-  padding: 0.4rem 0;
+  padding: 0.4rem 0 0.4rem 1.25rem;
   border-bottom: 1px solid var(--border);
 }
 
@@ -88,7 +96,8 @@ ul#entries {
   white-space: nowrap;
 }
 
-.entry.hidden {
+.entry.hidden,
+.date-heading.hidden {
   display: none;
 }
 

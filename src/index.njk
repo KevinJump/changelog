@@ -5,8 +5,11 @@ search: true
 ---
 <ul id="entries">
 {% for entry in collections.entries %}
+  {% set entryDate = entry.date | readableDate %}
+  {% if loop.first or entryDate != (collections.entries[loop.index0 - 1].date | readableDate) %}
+  <li class="date-heading">{{ entryDate }}</li>
+  {% endif %}
   <li class="entry" data-title="{{ entry.data.title | lower }}" data-body="{{ entry.templateContent | striptags | lower }}">
-    <span class="entry-date">{{ entry.date | readableDate }}</span>
     <a href="{{ entry.url | url }}">{{ entry.data.title }}</a>
   </li>
 {% endfor %}

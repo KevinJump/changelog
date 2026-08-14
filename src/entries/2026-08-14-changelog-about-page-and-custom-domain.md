@@ -1,5 +1,5 @@
 ---
-title: Changelog site: about page + custom domain
+title: "Changelog site: about page + custom domain"
 date: 2026-08-14T15:30:00
 ---
 **Repo:** [KevinJump/changelog](https://github.com/KevinJump/changelog)

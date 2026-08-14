@@ -37,7 +37,22 @@ Opens at `http://localhost:8080`.
 
 1. Push this repo to GitHub (public repo, unless you're on GitHub Pro/Team).
 2. In the repo settings, go to **Settings → Pages** and set **Source** to **GitHub Actions**.
-3. Push to `main` — the `deploy.yml` workflow builds and publishes to `https://<username>.github.io/<repo>/`.
+3. Push to `main` — the `deploy.yml` workflow builds and publishes the site.
+
+## Custom domain (changes.jumoo.co.uk)
+
+The site is served from `https://changes.jumoo.co.uk` instead of the default
+`github.io` URL. `src/CNAME` carries the domain through the build (Eleventy
+copies it to `_site/CNAME`, which GitHub Pages reads on every deploy). To set
+this up on a fresh repo:
+
+1. **DNS**: in jumoo.co.uk's DNS provider, add a `CNAME` record:
+   `changes` → `kevinjump.github.io`.
+2. **GitHub**: repo **Settings → Pages → Custom domain**, enter
+   `changes.jumoo.co.uk`, save. Wait for DNS check to go green, then tick
+   **Enforce HTTPS**.
+3. Push — `src/CNAME` keeps the setting in place across future deploys (GitHub
+   would otherwise reset it if the artifact ever omitted the file).
 
 ## Notes
 

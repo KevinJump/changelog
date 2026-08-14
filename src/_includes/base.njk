@@ -15,6 +15,7 @@
     {% if search %}
     <input id="search" type="search" placeholder="search..." autocomplete="off">
     {% endif %}
+    <a href="{{ '/about/' | url }}" class="about-link">about</a>
   </header>
   <main>
     {{ content | safe }}

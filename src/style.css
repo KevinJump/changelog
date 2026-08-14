@@ -53,6 +53,17 @@ a {
   color: var(--accent);
 }
 
+.about-link {
+  color: var(--muted);
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+
+.about-link:hover {
+  color: var(--accent);
+}
+
 #search {
   width: 100%;
   max-width: 220px;

@@ -9,4 +9,4 @@ date: 2026-08-14T08:35:00
 - Public: migrated Umbraco Marketplace listing JSON + screenshots out of `Jumoo/.github` (originals left in place for now, pending reference cleanup)
 - Public: set up GitHub Pages (plain branch deploy, no build step) on a custom domain, assets.jumoo.co.uk
 - Public: added a landing page and README
-- Updates the files on the website
+- Website: Updated the marketplace files and assets to the new urls.

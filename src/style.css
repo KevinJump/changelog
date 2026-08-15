@@ -28,8 +28,14 @@ header, main, footer {
 }
 
 header {
-  padding-top: 2rem;
+  padding-top: 1.25rem;
   padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.header-main {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,6 +74,13 @@ footer {
 .site-nav a.current {
   color: var(--fg);
   font-weight: bold;
+}
+
+.site-nav-top {
+  margin-top: 0;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  font-size: 0.8em;
 }
 
 a {

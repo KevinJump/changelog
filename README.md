@@ -60,3 +60,33 @@ this up on a fresh repo:
 
 - No comments, no inline editing, no database — just markdown files and static HTML.
 - Search is a small client-side filter over titles/bodies, no backend involved.
+
+## `/changelog` Claude Code skill
+
+This repo ships a Claude Code skill (`.claude/skills/changelog/`) that
+generates and commits entries for you from any project — run `/changelog` at
+the end of a work session and it drafts an entry from your recent
+git/session activity, shows it to you, and commits it locally (it never
+pushes without asking).
+
+To use it from any repo (not just when Claude's cwd is this one), install it
+as a personal skill:
+
+```bash
+# macOS/Linux
+ln -s "$(pwd)/.claude/skills/changelog" ~/.claude/skills/changelog
+
+# Windows (PowerShell, run as your own user)
+New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.claude\skills\changelog" -Target "$(Resolve-Path .claude\skills\changelog)"
+```
+
+Then set `CHANGELOG_REPO_DIR` in your shell profile to the path of **your**
+clone of this repo, so the skill knows where to write entries regardless of
+which project you run it from:
+
+```bash
+export CHANGELOG_REPO_DIR=/path/to/your/changelog/clone
+```
+
+The skill reads entry conventions from this repo's [CLAUDE.md](CLAUDE.md) —
+if those conventions change, everyone picks up the update next run.

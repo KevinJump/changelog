@@ -1,5 +1,5 @@
 ---
-title: Jumoo.TranslationManager.Automate: built and released v17.0.0-rc1
+title: "Jumoo.TranslationManager.Automate: built and released v17.0.0-rc1"
 date: 2026-08-18T09:00:00
 ---
 

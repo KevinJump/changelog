@@ -7,10 +7,12 @@ mechanics.
 
 ## Writing an entry
 
-- File: `src/entries/YYYY-MM-DD-slug.md` — **one file per entry**, not per day.
-  Multiple entries on the same date are normal (e.g. separate entries for each
-  project touched that day) — give each its own file with a distinct slug,
-  don't append to an existing file.
+- File: `src/entries/YYYY-MM-DD-slug.md`. Multiple entries on the same date
+  are normal (e.g. separate entries for each project touched that day) — each
+  distinct project gets its own file with its own slug. But if there's
+  already an entry for the *same project* on the *same day*, append the new
+  bullet points to that existing file instead of creating a second one for
+  the same project/day.
 - Frontmatter is minimal — `title` and `date`. Include a time on `date` (even
   though the site only displays the date) so same-day entries sort in the
   order they happened:

@@ -4,7 +4,9 @@ A very simple personal changelog site. Write markdown, push, it's live.
 
 ## Writing a new entry
 
-Create a new file in `src/entries/`, named `YYYY-MM-DD-slug.md`:
+Create a new file in `src/entries/YYYY/MM/`, named `YYYY-MM-DD-slug.md`
+(the year/month subfolders are just to keep the source tree browsable —
+they don't affect the URL, which is still `/entries/slug/`):
 
 ```md
 ---
@@ -17,7 +19,7 @@ Whatever you want, in markdown.
 Then:
 
 ```bash
-git add src/entries/2026-08-13-slug.md
+git add src/entries/2026/08/2026-08-13-slug.md
 git commit -m "2026-08-13 slug"
 git push
 ```

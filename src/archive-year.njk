@@ -1,0 +1,32 @@
+---
+layout: base.njk
+pagination:
+  data: collections.years
+  size: 1
+  alias: year
+permalink: "/archive/{{ year }}/"
+eleventyComputed:
+  title: "{{ year }} — Jumoo ChangeLog"
+---
+<p class="entry-date"><a href="{{ '/archive/' | url }}">&larr; archive</a></p>
+<h1>{{ year }}</h1>
+<div id="entries">
+{% set yearEntries = collections.entries | byYear(year) %}
+{% for group in yearEntries | groupByMonth %}
+  <details class="month-group"{% if loop.first %} open{% endif %}>
+    <summary class="month-heading">{{ group.month }}</summary>
+    <ul>
+    {% for entry in group.entries %}
+      {% set prevEntry = group.entries[loop.index0 - 1] %}
+      {% set entryDate = entry.date | readableDate %}
+      {% if loop.first or entryDate != (prevEntry.date | readableDate) %}
+      <li class="date-heading">{{ entryDate }}</li>
+      {% endif %}
+      <li class="entry">
+        <a href="{{ entry.url | url }}">{{ entry.data.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </details>
+{% endfor %}
+</div>

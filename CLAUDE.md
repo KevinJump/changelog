@@ -7,7 +7,9 @@ mechanics.
 
 ## Writing an entry
 
-- File: `src/entries/YYYY-MM-DD-slug.md`. Multiple entries on the same date
+- File: `src/entries/YYYY/MM/YYYY-MM-DD-slug.md` (year/month subfolders keep
+  the source tree browsable — the public URL is unaffected, it's still
+  `/entries/YYYY-MM-DD-slug/`). Multiple entries on the same date
   are normal (e.g. separate entries for each project touched that day) — each
   distinct project gets its own file with its own slug. But if there's
   already an entry for the *same project* on the *same day*, append the new

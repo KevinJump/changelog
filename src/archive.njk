@@ -1,0 +1,12 @@
+---
+layout: base.njk
+title: Archive — Jumoo ChangeLog
+permalink: /archive/
+---
+<p class="entry-date"><a href="{{ '/' | url }}">&larr; ~/changelog</a></p>
+<h1>Archive</h1>
+<ul id="years">
+{% for year in collections.years %}
+  <li><a href="{{ '/archive/' | url }}{{ year }}/">{{ year }}</a> <span class="entry-count">({{ collections.entries | countInYear(year) }})</span></li>
+{% endfor %}
+</ul>

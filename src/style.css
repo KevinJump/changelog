@@ -98,6 +98,38 @@ a {
   color: var(--accent);
 }
 
+.archive-link {
+  color: var(--muted);
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+
+.archive-link:hover {
+  color: var(--accent);
+}
+
+.browse-archive {
+  margin-top: 1rem;
+  font-size: 0.9em;
+}
+
+ul#years {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+
+ul#years li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.entry-count {
+  color: var(--muted);
+  font-size: 0.85em;
+}
+
 #search {
   width: 100%;
   max-width: 220px;
@@ -115,7 +147,8 @@ a {
   border-color: var(--accent);
 }
 
-ul#entries {
+ul#entries,
+#entries ul {
   list-style: none;
   margin: 0.5rem 0 0;
   padding: 0;
@@ -129,6 +162,44 @@ ul#entries {
 
 .date-heading:first-child {
   padding-top: 0;
+}
+
+.month-group {
+  border-top: 1px solid var(--border);
+  padding: 0.5rem 0;
+}
+
+.month-group:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.month-heading {
+  color: var(--fg);
+  font-weight: bold;
+  font-size: 0.95em;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.month-heading::-webkit-details-marker {
+  display: none;
+}
+
+.month-heading::before {
+  content: "▸";
+  display: inline-block;
+  width: 1em;
+  color: var(--muted);
+}
+
+.month-group[open] > .month-heading::before {
+  content: "▾";
+}
+
+.month-heading:hover {
+  color: var(--accent);
 }
 
 .entry {

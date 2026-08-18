@@ -21,8 +21,6 @@
       {% if search %}
       <input id="search" type="search" placeholder="search..." autocomplete="off">
       {% endif %}
-      <a href="{{ '/archive/' | url }}" class="archive-link">archive</a>
-      <a href="{{ '/about/' | url }}" class="about-link">about</a>
     </div>
   </header>
   <main>
@@ -34,6 +32,10 @@
       <a href="https://changes.jumoo.co.uk" class="current">changes</a>
       <a href="https://releases.jumoo.co.uk">releases</a>
       <a href="https://releases.jumoo.co.uk/versions.html">versions</a>
+    </nav>
+    <nav class="site-nav">
+      <a href="{{ '/archive/' | url }}">archive</a>
+      <a href="{{ '/about/' | url }}">about</a>
     </nav>
   </footer>
   <script src="{{ '/search.js' | url }}"></script>

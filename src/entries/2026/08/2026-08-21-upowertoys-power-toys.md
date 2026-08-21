@@ -1,5 +1,5 @@
 ---
-title: "uPowertoys: six new power toys"
+title: "uPowertoys: seven new power toys"
 date: 2026-08-21T10:21:00
 ---
 
@@ -14,3 +14,4 @@ date: 2026-08-21T10:21:00
 - uPowertoys: added a Theme Maker power toy - lists installed backoffice themes with per-theme show/hide toggles, and lets you add/edit custom themes via a colour-picker sidebar covering the key semantic colour variables (surface, text, header, interactive, borders, status)
 - uPowertoys: shipped four ready-made accent themes (red/green/blue/orange) based on the Material Design palette, as plain static CSS files registered like traditional themes so they show up alongside built-ins and can be toggled off
 - uPowertoys: noted in Theme Maker that the Environment Indicator power toy overwrites a theme's header colour while an environment match is active
+- uPowertoys: added a Logo Changer power toy - customize the backoffice logo (with a media-picker), same `PostConfigure<ContentSettings>` boot pattern as Login Customizer

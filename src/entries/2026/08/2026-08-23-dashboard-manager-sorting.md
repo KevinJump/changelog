@@ -9,3 +9,4 @@ date: 2026-08-23T08:10:00
 - Added a per-section "Reset order" button (only shown once that section has a custom order) to revert back to the dashboard's original registered order
 - Fixed the manager's default listing to sort by registered weight instead of alphabetically, so it matches the real on-screen dashboard order before any custom order is set
 - Opened [PR #47](https://github.com/Jumoo/umbraco.community.powertoys/pull/47)
+- Tagged and published [`v17.0.0-rc2`](https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.0.0-rc2) on GitHub, triggering the release workflow to push to NuGet

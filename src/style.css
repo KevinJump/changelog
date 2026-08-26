@@ -35,7 +35,7 @@ header {
   gap: 0.75rem;
 }
 
-.header-main {
+.site-header-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,6 +109,7 @@ ul#years li {
 }
 
 #search {
+  align-self: flex-end;
   width: 100%;
   max-width: 220px;
   background: transparent;

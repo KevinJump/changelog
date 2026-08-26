@@ -11,19 +11,19 @@
 </head>
 <body>
   <header>
-    <nav class="site-nav site-nav-top">
-      <a href="https://changes.jumoo.co.uk" class="current">changes</a>
-      <a href="https://releases.jumoo.co.uk">releases</a>
-      <a href="https://releases.jumoo.co.uk/versions.html">versions</a>
-      <a href="https://releases.jumoo.co.uk/stats.html">stats</a>
-      <a href="https://releases.jumoo.co.uk/activity.html">activity</a>
-    </nav>
-    <div class="header-main">
+    <div class="site-header-top">
       <a href="{{ '/' | url }}" class="site-title">~/changelog</a>
-      {% if search %}
-      <input id="search" type="search" placeholder="search..." autocomplete="off">
-      {% endif %}
+      <nav class="site-nav site-nav-top">
+        <a href="https://changes.jumoo.co.uk" class="current">changes</a>
+        <a href="https://releases.jumoo.co.uk">releases</a>
+        <a href="https://releases.jumoo.co.uk/versions.html">versions</a>
+        <a href="https://releases.jumoo.co.uk/stats.html">stats</a>
+        <a href="https://releases.jumoo.co.uk/activity.html">activity</a>
+      </nav>
     </div>
+    {% if search %}
+    <input id="search" type="search" placeholder="search..." autocomplete="off">
+    {% endif %}
   </header>
   <main>
     {{ content | safe }}

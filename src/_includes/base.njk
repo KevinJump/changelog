@@ -12,13 +12,11 @@
 <body>
   <header>
     <div class="site-header-top">
-      <a href="{{ '/' | url }}" class="site-title">~/changelog</a>
+      <a href="{{ '/' | url }}"><img class="site-icon" src="{{ '/jumoo-icon.png' | url }}" alt="Jumoo"></a>
       <nav class="site-nav site-nav-top">
-        <a href="https://changes.jumoo.co.uk" class="current">changes</a>
-        <a href="https://releases.jumoo.co.uk">releases</a>
-        <a href="https://releases.jumoo.co.uk/versions.html">versions</a>
-        <a href="https://releases.jumoo.co.uk/stats.html">stats</a>
-        <a href="https://releases.jumoo.co.uk/activity.html">activity</a>
+        <a href="{{ '/' | url }}" class="current">changes</a>
+        <a href="{{ '/archive/' | url }}">archive</a>
+        <a href="{{ '/about/' | url }}">about</a>
       </nav>
     </div>
     {% if search %}
@@ -30,16 +28,10 @@
   </main>
   <footer>
     <p>// end of log</p>
+    <a class="footer-logo" href="https://jumoo.co.uk"><img src="{{ '/jumoo-logo.png' | url }}" alt="Jumoo"></a>
     <nav class="site-nav">
-      <a href="https://changes.jumoo.co.uk" class="current">changes</a>
+      <a href="{{ '/' | url }}" class="current">changes</a>
       <a href="https://releases.jumoo.co.uk">releases</a>
-      <a href="https://releases.jumoo.co.uk/versions.html">versions</a>
-      <a href="https://releases.jumoo.co.uk/stats.html">stats</a>
-      <a href="https://releases.jumoo.co.uk/activity.html">activity</a>
-    </nav>
-    <nav class="site-nav">
-      <a href="{{ '/archive/' | url }}">archive</a>
-      <a href="{{ '/about/' | url }}">about</a>
     </nav>
   </footer>
   <script src="{{ '/search.js' | url }}"></script>

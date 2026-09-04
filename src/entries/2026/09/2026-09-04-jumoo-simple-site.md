@@ -1,5 +1,5 @@
 ---
-title: "jumoo-simple-site: built and launched the simplified jumoo.co.uk"
+title: "jumoo-simple-site: build the simplified jumoo.co.uk"
 date: 2026-09-04T14:49:00
 ---
 

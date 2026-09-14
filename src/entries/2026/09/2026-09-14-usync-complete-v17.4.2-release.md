@@ -14,3 +14,6 @@ date: 2026-09-14T16:31:00
   above, the temp-folder cleanup job, and dependency bumps; bumped v18's own
   uSync pins to 18.1.3 and renamed package-build.yml to prerelease.yml
   (manual-trigger only) so v18 prereleases can be triggered on demand too
+- Cut the v18.1.3 release: bumped VersionPrefix, updated CHANGELOG/release
+  notes, tagged `release/v18.1.3` and published customer-facing notes to the
+  uSync.Complete.Issues repo

@@ -1,5 +1,5 @@
 ---
-title: "uSync: imported block values match what Umbraco publishes, and Umbraco 17.7 readiness"
+title: "uSync 17.4.3: imported block values match what Umbraco publishes, and Umbraco 17.7 readiness"
 date: 2026-09-30T12:09:00
 ---
 
@@ -12,3 +12,6 @@ date: 2026-09-30T12:09:00
 - Worked around two core cache bugs fixed in 17.7/18.2: adding a composition left children's published content types stale, and a variance-only property change wasn't treated as structural. Tests fail on 17.3/18.1 without the workarounds ([#1102](https://github.com/KevinJump/uSync/pull/1102))
 - Forward-ported #1098–#1102 to v18 ([#1103](https://github.com/KevinJump/uSync/pull/1103)), then did a `-s ours` merge to reset the v17/v18 merge base, which squashed forward merges had left back at 17.3.2 ([#1104](https://github.com/KevinJump/uSync/pull/1104))
 - Branch sweep: deleted 7 merged branches from the remote
+- Tested 17.4.3-prerelease.20260930.6 on a fresh Umbraco 17.7.0 + Clean site: export, then report showed no changes (Clean's block content included); edits imported from disk showed up on the front end straight away
+- Built the same site with uSync.Complete 17.4.3 and Translation Manager 17.9.2 on top of the prerelease: 0 errors, 0 warnings, and it started cleanly
+- Released [`v17.4.3`](https://github.com/KevinJump/uSync/releases/tag/v17.4.3) to [NuGet](https://www.nuget.org/packages/uSync/17.4.3)

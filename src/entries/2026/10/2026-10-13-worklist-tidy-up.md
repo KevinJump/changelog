@@ -13,3 +13,7 @@ date: 2026-10-13T11:12:00
 - Jumoo.Processing: merged v17 forward to v18 (#44), bringing npmjs.org trusted publishing and tag-walk nightly versions to v18
 - uSync.Complete v13: closed the background restore-point compression experiment (#32) and tidied the v13 folder back to `v13/main`
 - MaintenanceMode: opened issues for #79 review, dependabot triage and the v18.1.0 release
+- Released [Passthrough connector 18.0.1](https://www.nuget.org/packages/Jumoo.TranslationManager.Passthrough/18.0.1) to NuGet: composer backoffice gate, plus v17 repo standards and CI carried over to the 18 line
+- Released [Microsoft connector 18.2.1](https://www.nuget.org/packages/Jumoo.TranslationManager.Microsoft/18.2.1) to NuGet: composer backoffice gate
+- Released [CrowdIn connector 18.1.0](https://www.nuget.org/packages/Jumoo.TranslationManager.Crowdin/18.1.0) to NuGet: `IOptionsTranslationProvider` support (access token withheld at partial detail) and composer backoffice gate. Now needs Translation Manager 18.2.0
+- Release worklist (#90): corrected MaintenanceMode to 18.2.0 and Jumoo.Json to 17.0.3/18.0.4, because the planned versions were already on NuGet untagged. TranslatePlus on hold pending feedback

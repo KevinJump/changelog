@@ -28,3 +28,5 @@ date: 2026-10-13T11:12:00
 - Connectors (Google, Xliff, Passthrough, CrowdIn, SmartCat, CSV, GlobalLink, LanguageWire, TranslatePlus, UmbracoAI, Microsoft): roll-ups and ignores on v17, merged forward to v18. CSV also needed a lock-file integrity fix for `@umbraco-cms/backoffice` (#8)
 - Jumoo.Processing: dependabot npm updates now point at the workspace root (#49). The failing vite-plugin-dts 5 PR was superseded by the npm group bump, which already built cleanly. Merged forward to v18 (#53, #55)
 - Translation Manager: merged the bumps on v17 and forward to v18 (#108, #111). Unpinned prettier on v18 to match v17 and reformatted what it flagged (#113)
+- uSync.Umbraco.Commerce: merged v17 forward to v18 ([#16](https://github.com/Jumoo/uSync.Umbraco.Commerce/pull/16), merge commit, not squash), bringing the tax class/shipping rate import fix (#13), repo standards and the marketplace listing to v18
+- Released [uSync.Umbraco.Commerce 18.0.0](https://www.nuget.org/packages/uSync.Umbraco.Commerce/18.0.0) to NuGet ([release](https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.0)): first release of the 18.x line, on Umbraco Commerce / uSync 18.1.0
